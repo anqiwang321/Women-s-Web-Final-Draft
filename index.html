@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- connects to the stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- connect to a Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/d8c23e1afc.js" crossorigin="anonymous"></script>
+  <!-- connect to a favicon -->
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ1VD1PFBY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WJ1VD1PFBY');
+  </script>
+
+  <title>Women's Web</title>
+</head>
+
+<body>
+  <a href = "#mainstuff" class="skip"><i class="fa-solid fa-forward"></i>Skip to Main Content</a>
+  <header>
+    <nav>
+        <ul>
+          <li class="active"><a href= "index.html">About</a></li>
+          <li><a href="literature.html"><i class="fa-solid fa-book-open"></i>Literature</a></li>
+          <li><a href="history.html"><i class="fa-solid fa-landmark"></i>History and Politics</a></li>
+          <li><a href="femdict.html"><i class="fa-solid fa-book"></i>Feminist Dictionary</a></li>
+        </ul>
+    </nav>
+    <h1> Woman's Web </h1>
+  </header>
+
+  <main id="mainstuff">
+    <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March">
+    <div>
+      <p>
+        This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a href="https://lsa.umich.edu/content/michigan-lsa/wgs/en.html"> Women's Studies</a> class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection.
+      </p>
+      <p>
+        This website currently contains 3 pages other than this one - click below to see a short description of each!
+      </p>
+    </div>
+
+      <h2>Literature</h2>
+      <div>
+        <p>
+          This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
+        </p>
+      </div>
+      <h2>History / Politics</h2>
+      <div>
+        <p>
+          This page features bios of important women in history and women currently in Congress or otherwise politically involved.
+        </p>
+      </div>
+      <h2>Feminist Dictionary</h2>
+      <div>
+        <p>
+          This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
+        </p>
+      </div>
+
+    <div>
+      <p>
+        <span>Kelsey's DISCLAIMER:</span> I did not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
+      </p>
+    </div>
+
+    <div style="text-align:center"> 
+      <button onclick="playPause()">Play/Pause</button> 
+      <button onclick="makeBig()">Big</button>
+      <button onclick="makeSmall()">Small</button>
+      <button onclick="makeNormal()">Normal</button>
+      <br><br>
+      <video id="video1" width="360">
+        <source src="video/AnneHathaway.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div> 
+    
+    <script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    } 
+    
+    function makeBig() { 
+        myVideo.width = 560; 
+    } 
+    
+    function makeSmall() { 
+        myVideo.width = 320; 
+    } 
+    
+    function makeNormal() { 
+        myVideo.width = 420; 
+    } 
+    </script>
+    
+  </main>
+
+  <footer>
+    <p class="thanks">
+      Thanks for visiting! <i></i>
+    </p>
+    <p>Orginal content created by Kelsey Toporski 2019</p>
+    <a href="#top">Back to Top</a>
+  </footer>
+</body>
+</html>
