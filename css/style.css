@@ -1,0 +1,293 @@
+.skip {
+  position:relative;
+  left: -1000px;
+}
+
+.skip:focus {
+  left: 0px;
+}
+
+body {
+  padding: 10px;
+  background-color: #f6f6ef;
+  font-size: 125%;
+}
+
+h1 {
+  text-align: center;
+  color: #65277d;
+  font-size: 30px;
+  padding: 10px;
+  line-height: 50px;
+  animation: tada 1s;
+}
+
+@keyframes tada {
+  from {
+      transform: scale3d(1, 1, 1)
+  }
+  10%, 20% {
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+  }
+  30%, 50%, 70%, 90% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+  }
+  40%, 60%, 80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+  }
+  to {
+      transform: scale3d(1, 1, 1)
+  }
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+h3 {
+  border-top: #65277d solid;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h4{
+  text-align: center;
+  margin:auto;
+}
+
+p {
+  padding: 20px;
+}
+
+img {
+  transition: transform 0.5s ease-in-out;
+  width: 90%;
+  padding: 20px;
+  margin: 5px 10px 20px 15px;
+  border: solid #d9b2dc 5px;
+  border-radius: 10%;
+  border-style:dotted;
+}
+
+img:hover {
+  transform: rotateY(180deg);
+  border-color: #f1c40f;
+  border-style: double;
+}
+
+
+dt {
+  margin-top: 15px;
+  font-family: monospace;
+  font-size: 24px;
+  text-align:left;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 15px;
+}
+
+dd {
+  font-family: monospace;
+  font-size: 24px;
+}
+
+footer {
+  background: linear-gradient(
+    90deg,
+    #eae7ee 0%,
+    #d0c8dd 25%,
+    #bea0de 70%,
+    #a681c4 100%
+  );
+  font-size: 15px;
+}
+
+li {
+  display: inline-block;
+}
+
+.active{
+  background-color: #c2b2d3;
+}
+
+img:hover {
+  opacity: 0.3;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 50px;
+  align-items: center;
+  background-color: #e0d5e3;
+}
+
+.grid div:nth-child(2n) img {
+  box-shadow: 10px 0px 10px rgb(171, 110, 179),
+    -10px 0px 10px rgb(171, 102, 196);
+}
+
+body {
+  background-image: url(../images/background.jpeg);
+  font-family: "Open Sans", sans-serif;
+}
+
+i {
+  padding: 4px;
+}
+
+.grid {
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+.grid div {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.grid img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.grid ul li{
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
+  line-height: 1;
+}
+
+.accordion {
+  margin: 0 auto;
+  width:95%;
+}
+
+.accordion-item {
+  background-color: #ffffff;
+  margin: 2px;
+}
+
+.accordion-header {
+  background-color: #611c9a;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-header:hover {
+  background-color: #360549;
+}
+
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item.active .accordion-panel {
+  max-height: 2000px;
+}
+
+.accordion-item.active .accordion-header {
+  background-color: #65277d;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+    margin: 150px 0px 150px 150px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  dl {
+    padding-top: 10px;
+  }
+
+  dt {
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 24px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 15px;
+  }
+
+  dd {
+    font-size: 20px;
+  }
+  
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
